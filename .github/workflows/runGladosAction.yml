@@ -11,6 +11,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: read  # 可以读取仓库内容
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
